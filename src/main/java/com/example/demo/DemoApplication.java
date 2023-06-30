@@ -14,27 +14,10 @@ import java.time.temporal.TemporalAmount;
 import java.util.List;
 
 @SpringBootApplication
-@RestController
 public class DemoApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
-    }
-
-    @GetMapping
-    public List<Student> hello() {
-        LocalDate birthday = LocalDate.of(1980, Month.APRIL, 1);
-        long daysDifference = ChronoUnit.DAYS.between(birthday, LocalDate.now());
-
-        return List.of(
-                new Student(
-                        1L,
-                        "Maria",
-                        "maria@example.com",
-                        birthday,
-                        (int) daysDifference / 365
-                )
-        );
     }
 
 }
