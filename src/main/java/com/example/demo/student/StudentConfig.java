@@ -17,7 +17,7 @@ public class StudentConfig {
             Student maria = new Student(
                     "Maria",
                     "maria@example.com",
-                    LocalDate.of(2015, Month.APRIL, 1)
+                    LocalDate.of(1989, Month.DECEMBER, 12)
             );
             Student john = new Student(
                     "John",
